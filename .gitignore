@@ -1,0 +1,10 @@
+node_modules
+dist
+ejs/*/renderedCss/*.*
+ejs/*/renderedCssCordova/*.*
+ejs/*/renderedHead/*.*
+ejs/*/rendredHeadCordova/*.*
+ejs/*/renderedHeadProduction/*.*
+ejs/*/renderedMain/*.*
+ejs/*/renderedMainCordova/*.*
+ejs/*/renderedMainProduction/*.*
