@@ -8,31 +8,31 @@
         })
 
         var imagesUrlEmailProviders = [
-            "/img/logosProviders/amazon.jpg",
-            "/img/logosProviders/aol.jpg",
-            "/img/logosProviders/brevo.jpg",
-            "/img/logosProviders/debug;ail.jpg",
-            "/img/logosProviders/dyn.jpg",
-            "/img/logosProviders/fastMail.jpg",
-            "/img/logosProviders/gandi.jpg",
-            "/img/logosProviders/gmail.jpg",
-            "/img/logosProviders/goDaddy.jpg",
-            "/img/logosProviders/iCloud.jpg",
-            "/img/logosProviders/ionos.jpg",
-            "/img/logosProviders/mailchimp.jpg",
-            "/img/logosProviders/mailee.jpg",
-            "/img/logosProviders/mailjet.jpg",
-            "/img/logosProviders/mandrill.jpg",
-            "/img/logosProviders/microsoft.jpg",
-            "/img/logosProviders/nodeMailer.jpg",
-            "/img/logosProviders/onlineee.jpg",
-            "/img/logosProviders/postmark.jpg",
-            "/img/logosProviders/sendcloud.jpg",
-            "/img/logosProviders/sendgrid.jpg",
-            "/img/logosProviders/sparkpost.jpg",
-            "/img/logosProviders/yahoo.jpg",
-            "/img/logosProviders/yandex.jpg",
-            "/img/logosProviders/zoho.jpg"
+            "amazon.jpg",
+            "aol.jpg",
+            "brevo.jpg",
+            "debug;ail.jpg",
+            "dyn.jpg",
+            "fastMail.jpg",
+            "gandi.jpg",
+            "gmail.jpg",
+            "goDaddy.jpg",
+            "iCloud.jpg",
+            "ionos.jpg",
+            "mailchimp.jpg",
+            "mailee.jpg",
+            "mailjet.jpg",
+            "mandrill.jpg",
+            "microsoft.jpg",
+            "nodeMailer.jpg",
+            "onlineee.jpg",
+            "postmark.jpg",
+            "sendcloud.jpg",
+            "sendgrid.jpg",
+            "sparkpost.jpg",
+            "yahoo.jpg",
+            "yandex.jpg",
+            "zoho.jpg"
         ]
 
         let htmlEmailProviders = ''
@@ -44,7 +44,7 @@
                         <img src="/public/img/logosProviders/${email}.jpg">
                     </div>`
             
-            if(index%4===0||index===(imagesUrlEmailProviders.length-1)){
+            if((index%4==0&&index!==0)||index===(imagesUrlEmailProviders.length-1)){
                 row += `</div>`
                 htmlEmailProviders += row         
             }
