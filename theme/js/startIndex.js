@@ -11,7 +11,7 @@
             "amazon.jpg",
             "aol.jpg",
             "brevo.jpg",
-            "debug;ail.jpg",
+            "debugMail.jpg",
             "dyn.jpg",
             "fastMail.jpg",
             "gandi.jpg",
@@ -46,7 +46,8 @@
             
             if((index%4==0&&index!==0)||index===(imagesUrlEmailProviders.length-1)){
                 row += `</div>`
-                htmlEmailProviders += row         
+                htmlEmailProviders += row
+                row = ``         
             }
         })
 
