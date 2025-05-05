@@ -41,7 +41,7 @@
         imagesUrlEmailProviders.forEach( (email,index) => {
             
             row += `<div class="imgProvider">
-                        <img src="/public/img/logosProviders/aol.jpg">
+                        <img src="/public/img/logosProviders/${email}.jpg">
                     </div>`
             
             if(index%4===0||index===(imagesUrlEmailProviders.length-1)){
