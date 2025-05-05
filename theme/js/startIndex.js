@@ -24,7 +24,6 @@
             "mailjet.jpg",
             "mandrill.jpg",
             "microsoft.jpg",
-            "nodeMailer.jpg",
             "onlineee.jpg",
             "postmark.jpg",
             "sendcloud.jpg",
@@ -44,7 +43,7 @@
                         <img src="/public/img/logosProviders/${email}">
                     </div>`
             
-            if((index%4==0&&index!==0)||index===(imagesUrlEmailProviders.length-1)){
+            if((index%3==0&&index!==0)||index===(imagesUrlEmailProviders.length-1)){
                 row += `</div>`
                 htmlEmailProviders += row
                 row = ``         

@@ -65,10 +65,13 @@ button:hover{
     text-align:center;
 }
 
+.listProviderContainer{
+    width:50%;
+}
+
 .listProvidersContainer-email{
     
     float:left;
-    width:50%;
     border:solid 0px;
 
 }
