@@ -1,3 +1,6 @@
+
+
+
 button{
         
     font-weight:600;
@@ -14,6 +17,7 @@ button{
 button:hover{
     background-color:#9aa9f8;
 }
+
 
 .headerProviders{
     margin:5px;
@@ -107,5 +111,61 @@ button:hover{
     
     width:100%;
     height:auto;
+
+}
+
+@media (max-width: 480px) {
+
+    
+    button{
+            
+        font-weight:600;
+        cursor:pointer;
+        border-radius:10px;
+        padding:30px;
+        background-color:#1c3be8;
+        color:#fff;
+        text-align:center;
+        width:100%;
+        margin-top:10px;
+        font-size: 1.5em;
+    }
+
+
+    .imgProvider {
+
+        width:50%;
+        height:auto;
+        float:left;
+        background-size: cover;
+        background-position: center;
+    
+    }
+
+
+    
+    .providerEmail{
+        float:left;
+        width: 100%;
+        height:80px;
+        font-weight:600;
+        border-bottom: solid 1px;
+        background-color:#fff;
+    }
+
+
+    .providerSms{
+        float:left;
+        width:100%;
+        height:80px;
+        font-weight:600;
+        background-color:#fff;
+    }
+
+    .listProvidersContainer-email {
+        float: left;
+        border: solid 0px;
+    }
+    
 
 }
