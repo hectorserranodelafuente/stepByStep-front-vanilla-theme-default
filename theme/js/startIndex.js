@@ -46,7 +46,7 @@
                         <img src="/public/img/logosProviders/${email}">
                     </div>`
             
-            if((index%3==0&&index!==0)||index===(imagesUrlEmailProviders.length-1)){
+            if(((index+1)%3==0&&index!==0)||index===(imagesUrlEmailProviders.length-1)){
                 row += `</div>`
                 htmlEmailProviders += row
                 row = `<div  class="listProvidersContainer-email">`         

@@ -44,7 +44,11 @@ button:hover{
     float:left;
     width:80%;
     border-bottom: solid 1px;
-}   
+}
+
+.providerEMailTitle img{   
+    width: 150px;
+}
 
 .providerEmailNodemailer{
     float:left;
@@ -53,7 +57,7 @@ button:hover{
 }
 
 .providerEmailNodemailer img{
-    width:100px;
+    width:150px;
 }
 
 .providerSms{
