@@ -53,6 +53,10 @@
             }
         })
 
+        document.getElementById("smsProviders").innerHTML = htmlEmailProviders
+
+         let htmlSMSProviders = ''
+             row = '<div  class="listProvidersContainer-sms">'
 
         imagesUrlSMSProviders.forEach( (sms,index) => {
             row += `<div class="imgProvider">
@@ -66,4 +70,4 @@
             }
         })
 
-        document.getElementById("smsProviders").innerHTML = htmlEmailProviders
+        document.getElementById("smsProviders").innerHTML = htmlSMSProviders
