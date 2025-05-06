@@ -56,13 +56,15 @@
         document.getElementById("emailProviders").innerHTML = htmlEmailProviders
 
          let htmlSMSProviders = ''
-             row = '<div  class="listProvidersContainer-sms">'
+             row = `<div  class="listProvidersContainer-sms">
+                        <div style="width:150px;margin:0 auto;height:80px;">
+                   `
 
         imagesUrlSMSProviders.forEach( (sms,index) => {
-            row += `<img src="/public/img/logosProviders/${sms}">`
+            row += `<img src="/public/img/logosProviders/${sms}" style="width:150px;">`
 
             if((index%1==0&&index!==0)||index===(imagesUrlSMSProviders.length-1)){
-                row += `</div>`
+                row += `</div></div>`
                 htmlSMSProviders += row
                 row = ``         
             }
