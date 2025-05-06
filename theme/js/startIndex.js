@@ -59,10 +59,8 @@
              row = '<div  class="listProvidersContainer-sms">'
 
         imagesUrlSMSProviders.forEach( (sms,index) => {
-            row += `<div class="imgProvider">
-                        <img src="/public/img/logosProviders/${sms}">
-                    </div>
-                    `
+            row += `<img src="/public/img/logosProviders/${sms}">`
+            
             if((index%1==0&&index!==0)||index===(imagesUrlSMSProviders.length-1)){
                 row += `</div>`
                 htmlSMSProviders += row
