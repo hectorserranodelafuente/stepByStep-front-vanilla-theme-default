@@ -53,7 +53,7 @@
             }
         })
 
-        document.getElementById("smsProviders").innerHTML = htmlEmailProviders
+        document.getElementById("emailProviders").innerHTML = htmlEmailProviders
 
          let htmlSMSProviders = ''
              row = '<div  class="listProvidersContainer-sms">'
