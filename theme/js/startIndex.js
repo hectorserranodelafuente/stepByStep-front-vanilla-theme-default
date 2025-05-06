@@ -12,21 +12,21 @@
 
         var imagesUrlEmailProviders = [
             "amazon.jpg",
+            "gmail.jpg",
+            "microsoft.jpg",
+            "iCloud.jpg",
+            "ionos.jpg",
             "aol.jpg",
             "brevo.jpg",
             "debugMail.jpg",
             "dyn.jpg",
             "fastMail.jpg",
             "gandi.jpg",
-            "gmail.jpg",
             "goDaddy.jpg",
-            "iCloud.jpg",
-            "ionos.jpg",
             "mailchimp.jpg",
             "mailee.jpg",
             "mailjet.jpg",
             "mandrill.jpg",
-            "microsoft.jpg",
             "onlineee.jpg",
             "postmark.jpg",
             "sendcloud.jpg",
@@ -49,7 +49,7 @@
             if((index%3==0&&index!==0)||index===(imagesUrlEmailProviders.length-1)){
                 row += `</div>`
                 htmlEmailProviders += row
-                row = ``         
+                row = `<div  class="listProvidersContainer-email">`         
             }
         })
 
@@ -60,7 +60,7 @@
 
         imagesUrlSMSProviders.forEach( (sms,index) => {
             row += `<img src="/public/img/logosProviders/${sms}">`
-            
+
             if((index%1==0&&index!==0)||index===(imagesUrlSMSProviders.length-1)){
                 row += `</div>`
                 htmlSMSProviders += row
