@@ -38,7 +38,23 @@
         ]
 
         let htmlEmailProviders = ''
-        let row = '<div  class="listProvidersContainer-email">'
+        let row = `<div  class="listProvidersContainer-email">
+                    <div class = "providerEmail">
+          
+                        <div class = "providerEmail-container">
+                            
+                            <div class = "providerEmailTitle">
+                            <img src="/public/img/logosProviders/email.jpg">
+                            </div>
+                            
+                            <div class="providerEmailNodemailer">
+                            <img src="/public/img/logosProviders/nodeMailer.jpg">
+                            </div>
+
+                        </div>  
+                            
+                    
+                    </div>`
         
         imagesUrlEmailProviders.forEach( (email,index) => {
             
@@ -55,7 +71,15 @@
 
         document.getElementById("emailProviders").innerHTML = htmlEmailProviders
 
-         let htmlSMSProviders = ''
+         let htmlSMSProviders =`<div class = "providerSms">
+                                    
+                                    <div class="providerSmsTitle">
+                                        <div style="width:150px;margin:0 auto;height:80px;">
+                                        <img src="/public/img/logosProviders/SMS.jpg" style="width:150px;"> 
+                                        </div>
+                                    </div>
+                                    
+                                </div>`
              row = `<div  class="listProvidersContainer-sms">
                         <div style="width:200px;margin:0 auto;height:80px;">
                    `
