@@ -31,9 +31,9 @@ button:hover{
 .providerEmail{
     float:left;
     width: 70%;
-    height:50px;
+    height:80px;
     font-weight:600;
-    background-color: yellow;
+    border-bottom: solid 1px;
 }
 
 .providerEmail-container{
@@ -43,11 +43,12 @@ button:hover{
 .providerEmailTitle{
     float:left;
     width:80%;
+    border-bottom: solid 1px;
 }   
 
 .providerEmailNodemailer{
     float:left;
-    width:20%;
+    width:100px;
 
 }
 
@@ -58,16 +59,18 @@ button:hover{
 .providerSms{
     float:left;
     width:30%;
-    height:50px;
+    height:80px;
     font-weight:600;
 }
 
 .providerSmsTitle{
     text-align:center;
+    border-bottom: solid 1px;
 }
 
 .listProviderContainer{
-    width:50%;
+    width:70%;
+    float:left;
 }
 
 .listProvidersContainer-email{

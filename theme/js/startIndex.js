@@ -6,6 +6,9 @@
         document.getElementById("goToSignUp").addEventListener('click',function(){
             location.href = window.location.origin+`/view/basic-signUp/basicSignUpForm.html`
         })
+        var imagesUrlSMSProviders = [
+            "labsMobile.jpg"
+        ]
 
         var imagesUrlEmailProviders = [
             "amazon.jpg",
@@ -50,4 +53,17 @@
             }
         })
 
-        document.getElementById("emailProviders").innerHTML = htmlEmailProviders
+
+        imagesUrlSMSProviders.forEach( (sms,index) => {
+            row += `<div class="imgProvider">
+                        <img src="/public/img/logosProviders/${sms}">
+                    </div>
+                    `
+            if((index%1==0&&index!==0)||index===(imagesUrlSMSProviders.length-1)){
+                row += `</div>`
+                htmlSMSProviders += row
+                row = ``         
+            }
+        })
+
+        document.getElementById("smsProviders").innerHTML = htmlEmailProviders
