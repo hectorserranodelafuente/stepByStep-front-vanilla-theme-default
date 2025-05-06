@@ -48,7 +48,12 @@
                                 <img src="/public/img/logosProviders/nodeMailer.jpg">
                                 </div>
 
-                            </div> `
+                            </div> 
+                            <div>
+                               <a href="https://community.nodemailer.com/2-0-0-beta/setup-smtp/well-known-services/">
+                                https://community.nodemailer.com/2-0-0-beta/setup-smtp/well-known-services/
+                               </a> 
+                            </div>`
         
         let row = `${headerEmail}<div  class="listProvidersContainer-email">`
         
@@ -76,7 +81,7 @@
                             </div>
                                     
                         </div>`
-                         
+
         let htmlSMSProviders =``             
         row = `${headerSMS}<div  class="listProvidersContainer-sms">
                         <div style="width:200px;margin:0 auto;height:80px;">
