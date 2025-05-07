@@ -49,7 +49,7 @@
                                 </div>
 
                             </div> 
-                            <div>
+                            <div class="providerEmail-container-href">
                                <a href="https://community.nodemailer.com/2-0-0-beta/setup-smtp/well-known-services/">
                                 https://community.nodemailer.com/2-0-0-beta/setup-smtp/well-known-services/
                                </a> 
