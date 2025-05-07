@@ -1,5 +1,5 @@
 
-
+@media (min-width: 480px) {
 
 button{
         
@@ -43,6 +43,19 @@ button:hover{
 .providerEmail-container{
     border:solid 1px;
     padding:5px;
+    height: 75px;
+}
+
+.providerEmail-container-href{
+    border-bottom:solid 1px;
+    border-left:solid 1px;
+    border-right:solid 1px;
+    padding:5px;
+}
+
+.providerEmail-container-href a{
+   color:#000;
+   text-align:center; 
 }
 
 .providerEmailTitle{
@@ -66,8 +79,8 @@ button:hover{
 
 .providerSms{
     float:left;
-    width:30%;
-    height:80px;
+    width:100%;
+    height:85px;
     font-weight:600;
     background-color:#fff;
     border:solid 1px;
@@ -111,7 +124,7 @@ button:hover{
     height:auto;
 
 }
-
+}
 @media (max-width: 480px) {
 
     
@@ -166,6 +179,24 @@ button:hover{
         font-weight:600;
         border-bottom: solid 1px;
         background-color:#fff;
+    }
+
+    .providerEmail-container{
+        border:solid 1px;
+        padding:5px;
+        height: 75px;
+    }
+
+    .providerEmail-container-href{
+        border-bottom:solid 1px;
+        border-left:solid 1px;
+        border-right:solid 1px;
+        padding:5px;
+    }
+    
+    .providerEmail-container-href a{
+       color:#000;
+       text-align:center; 
     }
 
 
