@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<head>
+      
+  <% if (environment=='development') { %>
+    <%- include('../renderedCss/cssHref.ejs') %>
+    <% } %>
+
+   
+
+    <% if (environment=='cordova') { %>
+      <%- include('../renderedCssCordova/cssHref.ejs') %>
+    <% } %>
+    <style>
+ 
+
+    </style>
+
+</head>
+<body>
+    
+    <button id ="closeSession" onclick="closeSession()"> CLOSE SESSION </button>
+    
+    Wellcome to init
+
+    
+
+    <div id="popUpRenewal" style="position:absolute;border:solid 1px;padding:20px;top:0;background-color:#fff;" class="hidden">
+        <div id="messagePopUpRenewalSuccess" style="color:yellowgreen;"></div>
+        <div id="messagePopUpRenewalError" style="color:red;"></div>
+        Do you want to <strong>renew session</strong> ?
+        <form id="questionRenewSession" onsubmit="submitRenewSession(event)">  
+            <input type="radio" name="renewSession" value="yes"> Yes
+            <input type="radio" name="renewSession" value="no"> No
+            <button id="renewSessionButton" type="submit">RENEW</button>
+        </form>
+    </div>
+    
+
+    <% if (environment=='development') { %>
+      <%- include('../renderedHead/head.ejs') %>
+      <% } %>
+  
+      <% if (environment=='production') { %>
+        <%- include('../renderedHeadProduction/head.ejs') %>
+      <% } %>
+
+      <% if (environment=='cordova') { %>
+        <%- include('../renderedHeadCordova/head.ejs') %>
+      <% } %>
+    
+    
+</body>
+
+</html>
