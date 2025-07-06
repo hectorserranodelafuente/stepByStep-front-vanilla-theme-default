@@ -1,3 +1,3 @@
 module.exports = {
-    scriptNames:['.js/cubical-expansion.js']
+    scriptNames:['../../public/js/cubical-expansion.js']
 }
