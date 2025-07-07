@@ -1,0 +1,1 @@
+var redirectionLoading = `/view/basic-start/startIndex.html`
