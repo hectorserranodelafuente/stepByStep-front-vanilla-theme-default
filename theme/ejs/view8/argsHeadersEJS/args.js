@@ -1,8 +1,8 @@
 
-const env = require('../env.js')
+const fs = require('fs')
 module.exports = {
     scriptNames:[
         '../../public/js/redirectionLoading.js',
-        `../..${env.development.pathJsFile}`
+        '../../public/js/logicLoading.js'
     ]
 }
