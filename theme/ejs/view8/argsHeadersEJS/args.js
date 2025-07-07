@@ -1,3 +1,8 @@
+
+const env = require('../env.js')
 module.exports = {
-    scriptNames:['../../public/js/redirectionLoading.js','../../public/js/cubical-expansion.js']
+    scriptNames:[
+        '../../public/js/redirectionLoading.js',
+        `../..${env.development.pathJsFile}`
+    ]
 }
