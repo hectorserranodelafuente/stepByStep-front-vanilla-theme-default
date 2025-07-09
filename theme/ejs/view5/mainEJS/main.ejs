@@ -6,7 +6,10 @@
     <%- include('../renderedCss/cssHref.ejs') %>
     <% } %>
 
-   
+   <% if (environment=='production') { %>
+    <%- include('../renderedCss/cssHref.ejs') %>
+    <% } %>
+
 
     <% if (environment=='cordova') { %>
       <%- include('../renderedCssCordova/cssHref.ejs') %>
