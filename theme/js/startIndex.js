@@ -9,7 +9,7 @@
         
         let basePathImg = `/public/img/`
         if(document.getElementById("weAreInCordova")){
-            basePathImg = `../img/`
+            basePathImg = `../../img/`
         }
         
         var imagesUrlSMSProviders = [
