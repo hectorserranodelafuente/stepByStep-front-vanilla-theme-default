@@ -6,6 +6,12 @@
         document.getElementById("goToSignUp").addEventListener('click',function(){
             location.href = window.location.origin+`/view/basic-signUp/basicSignUpForm.html`
         })
+        
+        let basePathImg = `/public/img/`
+        if(document.getElementById("weAreInCordova")){
+            basePathImg = `../img/`
+        }
+        
         var imagesUrlSMSProviders = [
             "labsMobile.jpg"
         ]
@@ -41,11 +47,11 @@
         let headerEmail = `  <div class = "providerEmail-container">
                                 
                                 <div class = "providerEmailTitle">
-                                <img src="/public/img/logosProviders/email.jpg">
+                                <img src="${basePathImg}logosProviders/email.jpg">
                                 </div>
                                 
                                 <div class="providerEmailNodemailer">
-                                <img src="/public/img/logosProviders/nodeMailer.jpg">
+                                <img src="${basePathImg}logosProviders/nodeMailer.jpg">
                                 </div>
 
                             </div> 
@@ -60,7 +66,7 @@
         imagesUrlEmailProviders.forEach( (email,index) => {
             
             row += `<div class="imgProvider">
-                        <img src="/public/img/logosProviders/${email}">
+                        <img src="${basePathImg}logosProviders/${email}">
                     </div>`
             
             if(((index+1)%4==0&&index!==0)||index===(imagesUrlEmailProviders.length-1)){
@@ -76,7 +82,7 @@
                                     
                             <div class="providerSmsTitle">
                                 <div style="width:150px;margin:0 auto;height:80px;">
-                                <img src="/public/img/logosProviders/SMS.jpg" style="width:150px;"> 
+                                <img src="${basePathImg}logosProviders/SMS.jpg" style="width:150px;"> 
                                 </div>
                             </div>
                                     
